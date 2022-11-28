@@ -6,13 +6,13 @@ import { RestaurantInfoCard } from '../components/restaurant-info.card';
 
 
 export const RestaurantsScreen = () => (
-    <SafeAreaView style={{ flex: 1, marginTop: StatusBar.currentHeight }}>
-    <Searchbar placeholder="Search"/>
+  <SafeAreaView style={{ flex: 1, marginTop: StatusBar.currentHeight }}>
+    <Searchbar placeholder="Search" />
     <FlatList
-    data={[{name: 1}, {name: 2},{name: 3}, {name: 4},{name: 5}, {name: 6},{name: 7}, {name: 8},{name: 9}, {name: 10}]}
-    renderItem={()=> <RestaurantInfoCard/>}
-    keyExtractor={(item) => item.name}
-    contentContainerStyle={{padding:16}}
-   />
-    </SafeAreaView>
+      data={[{ name: 1 }, { name: 2 }, { name: 3 }, { name: 4 }, { name: 5 }, { name: 6 }, { name: 7 }, { name: 8 }, { name: 9 }, { name: 10 }]}
+      renderItem={() => <RestaurantInfoCard />}
+      keyExtractor={(item) => item.name}
+      contentContainerStyle={{ padding: 16 }}
+    />
+  </SafeAreaView>
 )
